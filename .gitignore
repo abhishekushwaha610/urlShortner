@@ -2,4 +2,4 @@ __pychache__
 *.pyc
 
 db.sqlite3
-static/admin
+staticfiles/admin
