@@ -2,9 +2,9 @@
 {%block title %}Url Shortner{%endblock title %}
 {%block content%}
 <div class="" style="background-color: gainsboro; padding-top: 10rem;padding-bottom: 9rem;height: 40rem;">
-    <div class="row align-items-center">
+    <div class="row align-items-center" style="width: 100%;">
         <div class="col-md-6 text-center">
-            <div style="font-size: 100px;">URL Shortner</div>
+            <div style="font-size: 100px;" id="homeTitle">URL Shortner</div>
         </div>
         <div class="col-md-6 text-center">
             <h2>
@@ -16,4 +16,9 @@
         </div>
     </div>
 </div>
+<script>
+    if(window.innerWidth <= 700 ){
+        document.getElementById("homeTitle").style.fontSize = "50px";
+    }
+</script>
 {%endblock content%}
